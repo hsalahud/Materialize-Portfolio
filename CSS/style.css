@@ -63,10 +63,11 @@ body{
     box-sizing:border-box;
     height:200px;
     width:200px;
-    float: left;
     margin-top:27px;
-    margin-right:24px;
-    margin-bottom:27px;
+    margin-right:auto;
+    margin-bottom:auto;
+    margin-left:auto;
+    display: block;
 }
 
 /* bio image styling for smaller displays */
