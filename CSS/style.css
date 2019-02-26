@@ -1,0 +1,254 @@
+/*Setting the background image and its dimensions. */
+html, body{
+    height: 100%;
+    margin: 0;
+    background-image: url("../images/morocco/morocco.png");
+}
+
+/* sticky footer */
+body{
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+
+
+  }
+
+/* main content */
+.row.white{
+    margin-top:120px;
+}
+/* area between header and footer in about page */
+  .uniqueContent {
+    flex: 1 0 auto;
+  }
+/* styling for name and initial */
+#name, #initial{
+    font-family: 'Georgia', Times, Times New Roman, serif;
+    background-color: #4db6ac;
+    padding-left:10px;
+    padding-right:10px;
+    box-sizing: border-box;
+    min-width: 270px;
+    color: white !important;
+}
+/* additional changes to initial */
+#initial{
+    margin:auto;
+    box-sizing:border-box;
+    min-width: 30px;
+}
+/* more changes to initial */
+#initial {
+    box-sizing:border-box;
+    border-radius: 50%;
+    behavior: url(PIE.htc);
+    width: 50px;
+    height:50px;
+    line-height: 30px;
+    padding: 8px;
+    border: 1px solid #666;
+    color: #666;
+    text-align: center;
+    margin-top:8px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+/* bio image styling for larger displays */
+#bio-image{
+    box-sizing:border-box;
+    height:200px;
+    width:200px;
+    float: left;
+    margin-top:27px;
+    margin-right:24px;
+    margin-bottom:27px;
+}
+
+/* bio image styling for smaller displays */
+#bio-image2{
+    box-sizing:border-box;
+    height:200px;
+    width:200px;
+    /* margin-top:27px;
+    margin-right:24px;
+    margin-bottom:27px; */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* subheader styling */
+h2{
+    border-bottom: 2px solid gray;
+}
+
+/* additional modification to cards in portfolio */
+.card.small{
+    height: 200px !important;
+    /* width: 200px !important; */
+    min-width: 150px !important;
+}
+
+
+/* submit button styling */
+#submit{
+    margin-bottom:35px;
+}
+
+/* bio image class styling */
+.bioImage{
+    margin:auto;
+    margin-left: 41px;
+}
+
+/* general paragraph styling */
+p{
+    line-height: 2;
+}
+
+/* styling for third paragraph in about page */
+#history3{
+    margin-top:0px;
+}
+
+#about, #portfolio, #contact{
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif !important;
+    color: rgb(151, 146, 146);
+}
+
+.sidenav{
+    color: rgb(151, 146, 146);
+}
+
+
+/* dropdown button */
+.btn{
+    margin-top: 13px;
+    /* position: absolute right !important; */
+}
+
+
+/* Galaxy S5 */
+@media screen and (min-width:320px) and (max-width: 370px){
+    .row.white{
+        margin-top: auto;
+    }
+
+    #initial {
+        box-sizing:border-box;
+        border-radius: 50%;
+        behavior: url(PIE.htc);
+        width: 50px;
+        height:50px;
+        line-height: 30px;
+        padding: 8px;
+        border: 1px solid #666;
+        color: #666;
+        text-align: center;
+        margin-top:3px;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+    
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+ 
+}
+
+/* Pixel 2 AND iPhone 6/7/8 AND iPhone PLUS and iPhone X */
+
+@media screen and (min-width:414px) and (max-width: 1500px){
+    .row.white{
+        display: block;
+        margin-top: auto;
+    }
+}
+
+@media screen and (min-width:370px) and (max-width: 414px){
+    .row.white{
+        margin-top: auto;
+    }
+
+    #initial {
+        box-sizing:border-box;
+        border-radius: 50%;
+        behavior: url(PIE.htc);
+        width: 50px;
+        height:50px;
+        line-height: 30px;
+        padding: 8px;
+        border: 1px solid #666;
+        color: #666;
+        text-align: center;
+        margin-top:3px;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+    
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+ 
+}
+
+/* iPhone5/SE*/
+@media screen and (max-width:320px){
+    .row.white{
+        margin-top: auto;
+    }
+
+    #initial {
+        box-sizing:border-box;
+        border-radius: 50%;
+        behavior: url(PIE.htc);
+        width: 50px;
+        height:50px;
+        line-height: 30px;
+        padding: 8px;
+        border: 1px solid #666;
+        color: #666;
+        text-align: center;
+        margin-top:3px;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+    
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+ 
+}
+
+/* Other */
+@media screen and (min-width:414px) and (max-width: 600px){
+    .row.white{
+        margin-top: auto;
+    }
+
+    #initial {
+        box-sizing:border-box;
+        border-radius: 50%;
+        behavior: url(PIE.htc);
+        width: 50px;
+        height:50px;
+        line-height: 30px;
+        padding: 8px;
+        border: 1px solid #666;
+        color: #666;
+        text-align: center;
+        margin-top:3px;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+    
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+ 
+}

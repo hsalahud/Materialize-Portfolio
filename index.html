@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+
+    <title>Document</title>
+
+</head>
+
+
+<!-- top nav -->
+<nav class="#ffffff white">
+    <div class="row">
+        <div class="col s1"></div>
+        <div class="col s4">
+            <div class="nav-wrapper" id="header"></div>
+
+            <div class="brand-logo left hide-on-med-and-down" id="name">Hamza Salahuddin</div>
+
+
+            <!-- initial triggered on smaller platforms -->
+            <div class="brand-logo-2 left hide-on-large-only" id="initial">HS</div>
+
+        </div>
+
+        <div class="col s2"></div>
+
+        <div class="col s4">
+
+            <a class='btn dropdown-trigger right hide-on-large-only' data-target='dropdown1'>Menu</a>
+
+            <ul id='dropdown1' class='dropdown-content right hide-on-large-only'>
+                <li><a href="#" id="about">About</a></li>
+                <li><a href="./portfolio.html" id="portfolio">Portfolio</a></li>
+                <li><a href="./contact.html" id="contact">Contact</a></li>
+            </ul>
+
+            <ul id="nav-mobile" class="hide-on-med-and-down right">
+                <li><a href="#" id="about">About</a></li>
+                <li><a href="./portfolio.html" id="portfolio">Portfolio</a></li>
+                <li><a href="./contact.html" id="contact">Contact</a></li>
+            </ul>
+
+        </div>
+        <div class="col s1"></div>
+    </div>
+</nav>
+
+<body>
+
+    <main class="uniqueContent">
+        <div class="row">
+            <div class="col s1"></div>
+            <div class="col s10">
+                <div class="row">
+                    <div class="col s12"> </div>
+                </div>
+
+                <div class="container">
+                    <!-- main content for about me -->
+                    <div class="row white">
+
+                        <div class="col s12 hide-on-med-and-down">
+                            <h2>About Me</h2>
+                        </div>
+                        <div class="col s12 hide-on-large-only">
+                            <h2 class="center-align">About Me</h2>
+                        </div>
+                        <div class="col s4 hide-on-med-and-down">
+                            <img src="./images/Tweek_pic.png" alt="Hamza" id="bio-image">
+                        </div>
+                        <!-- bio image for smaller screens -->
+                        <div class="bioImage col s12 hide-on-large-only">
+                            <img src="./images/Tweek_pic.png" alt="Hamza" id="bio-image2" class="center">
+                        </div>
+                        <!-- about me for larger screens -->
+                        <div class="col s8 hide-on-med-and-down">
+                            <p id="history1" class="grey-text text-darken-1">
+                                Hi Everyone! My name is Hamza and I am from Toronto, Canada. I moved to California in
+                                2014
+                                to pursue my
+                                acting career. Just kidding! I came here to do my
+                                Master in Public Policy here at UC Irvine.
+                            </p>
+
+                            <p id="history2" class="grey-text text-darken-1">
+                                I studied developing and assessing policies, all of which have many
+                                social impacts. There are many applications of policy making. Some that I have studied
+                                range from Environmental impacts
+                                of development projects (think traffic, removing native plants and animals), labor
+                                impacts, and
+                                education impacts. I got introduced to a form of programming during this period.
+                            </p>
+                        </div>
+                        <!-- about me for smaller screens -->
+                        <div class="col s12 hide-on-large-only" class="grey-text text-darken-1">
+                            <p id="history1s">
+                                Hi Everyone! My name is Hamza and I am from Toronto, Canada. I moved to California in
+                                2014
+                                to pursue my
+                                acting career. Just kidding! I came here to do my
+                                Master in Public Policy here at UC Irvine.
+                            </p>
+
+                            <p id="history2s" class="grey-text text-darken-1">
+                                I studied developing and assessing policies, all of which have many
+                                social impacts. There are many applications of policy making. Some that I have studied
+                                range from Environmental impacts
+                                of development projects (think traffic, removing native plants and animals), labor
+                                impacts, and
+                                education impacts. I got introduced to a form of programming during this period.
+                            </p>
+                        </div>
+                        <!-- third paragraph has same styling across platforms -->
+                        <div class="col s12" >
+                            <p id="history3" class="grey-text text-darken-1">
+                                I was studying Statistics where I would use data to assess the impacts of educational
+                                programs like
+                                free lunch programs. That led me to get a job with
+                                an education e-learning company. My goal is to learn more about programming so I can
+                                keep my options
+                                open and so that in the future I can find a way of collaborating
+                                my skills and knowledge to have a positive impact on educational experiences.
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="col s12"></div>
+
+        </div>
+
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <script>
+        // dropdown function
+        document.addEventListener('DOMContentLoaded', function () {
+            var elems = document.querySelectorAll('.dropdown-trigger');
+            var instances = M.Dropdown.init(elems, {
+                alignment: 'right',
+                // hover: true
+            });
+        });
+
+    </script>
+
+</body>
+<!-- footer -->
+<footer class="page-footer black">
+    <div class="container">
+        <div class="row">
+
+            <div class="footer-copyright">
+                <div class="container center">
+                    © Copyright
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+</html>
